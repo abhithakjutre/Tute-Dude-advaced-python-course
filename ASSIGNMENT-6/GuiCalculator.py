@@ -8,9 +8,8 @@ window.resizable(False,False)
 window.geometry("300x460")
 
 
-
 # Entry Box Section
-entry_box = Entry(window,width=300, font=("Arial",25),bg="#d1d0cd",justify="right")
+entry_box = Entry(window,width=300, font=("Lacquer Static",25),bg="#d1d0cd",justify="right")
 entry_box.pack(ipady=40)
 
 # Button Section
@@ -56,7 +55,7 @@ b.place(x=150,y=300)
 
 b = Button(window,width=8, height=4,text="➖",command=lambda:click("-"))
 b.place(x=220,y=300)
-b = Button(window,width=8, height=4,text="C",command=clear)
+b = Button(window,width=8, height=4,text="C",command=clear,bg="#ff3512",fg="white")
 b.place(x=10,y=380)
 b = Button(window,width=8, height=4,text="0",command=lambda:click(0))
 b.place(x=80,y=380)
@@ -115,7 +114,7 @@ def equal():
 #
 
 
-b = Button(window,width=8, height=4,text="🟰",command=equal)
+b = Button(window,width=8, height=4,text="🟰",command=equal,bg="#e89356")
 b.place(x=150,y=380)
 
 

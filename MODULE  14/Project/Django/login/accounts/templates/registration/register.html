@@ -1,0 +1,12 @@
+{% extends 'index.html' %}
+{% block content %}
+<title>Autorigation</title>
+<h1>Create a new user</h1>
+
+<form method="post">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button>Register</button>
+</form>
+
+{% endblock %}
