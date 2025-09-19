@@ -17,8 +17,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from helloapp.views import Helloword_view
-
+from rest_framework import routers
+from helloapp.views import PostView
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('/', Helloword_view())
+    path('', Helloword_view.as_view()),
 ]
+
+router = routers.SimpleRouter()
+router.register('post', PostView)
+
+urlpatterns += router.urls
