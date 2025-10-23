@@ -1,6 +1,6 @@
 from tkinter import *
 
-from Demos.BackupSeek_streamheaders import win32_stream_id_size
+
 
 window = Tk()
 window.title("Calculator")
