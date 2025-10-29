@@ -3,8 +3,8 @@ import numpy as np
 
 img = cv2.imread(r"C:\Users\Abhishek Thakur\OneDrive\Documents\GitHub\Tute-Dude-advaced-python-course\MODULE 18\images\example_image.jpg")
 
-width = 600
-height = 850
+width = 300
+height = 300
 
 dim = (width, height)
 resized = cv2.resize(img, dim)

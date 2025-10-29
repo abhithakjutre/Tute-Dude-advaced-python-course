@@ -4,7 +4,7 @@ import cv2
 path = r"C:\Users\Abhishek Thakur\OneDrive\Documents\GitHub\Tute-Dude-advaced-python-course\MODULE 18\images\example_image.jpg"
 img = cv2.imread(path, 0)
 
-print("Dimensions of the image: ", img.shape)
+print("Dimensions of the original image: ", img.shape)
 
 scale = 50
 
@@ -13,7 +13,7 @@ width = int(img.shape[1]*scale /100)
 height = int(img.shape[0]*scale /100)
 
 dim = (width, height)
-resized = cv2.resize(img, dim)
+resized = cv2.resize(img, dim, interpolation=cv2.INTER_LINEAR)
 print("Dimension of Resized image:", resized.shape)
 
 
